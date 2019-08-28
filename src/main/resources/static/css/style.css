@@ -1,0 +1,27 @@
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
+body {
+    width: 50%;
+    min-width: 820px;
+    margin: 0 auto;
+}
+button:hover {
+    background-color: #1e88e5;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    background-color: #efefef;
+    height: 50px;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    align-items: center
+}

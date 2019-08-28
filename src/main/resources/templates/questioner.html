@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Static content -->
+    <script type="text/javascript" src="resources/js/quizlib.1.0.1.js"></script>
+    <script type="text/javascript" src="resources/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/quizlib.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="resources/css/stylesheet.css" media="screen">
+
+    <title>Quizlib Example</title>
+
+</head>
+<body>
+    <h1>Spring Boot - MVC web application example (II)</h1>
+    <hr>
+
+    <!-- Quiz Results -->
+    <div id="quiz-result" class="card">
+        Operation in progress...<br/>
+    </div>
+
+    <form>
+        <!-- Quiz Container -->
+        <div id="quiz">
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. What is the answer to life, the universe and everything?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q1">
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Your enemy's father...</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q2">
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. Which factors will contribute to the end of humanity as we know it?</div>
+                <div class="quizlib-question-answers">
+                    <input type="text" name="q3">
+                </div>
+            </div>
+            <!-- Answer Button -->
+            <button type="button" onclick="printResults();">Print Answers</button>
+        </div>
+    </form>
+
+</body>
+</html>
