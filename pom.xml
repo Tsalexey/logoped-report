@@ -128,13 +128,15 @@
                             <goal>clean</goal>
                         </goals>
                         <configuration>
+                            <excludeDefaultDirectories>true</excludeDefaultDirectories>
                             <filesets>
                                 <fileset>
                                     <directory>${basedir}/src/main/resources/static</directory>
-                                    <includes>
-                                        <include>**/*.css</include>
-                                        <include>**/*.js</include>
-                                    </includes>                                </fileset>
+                                    <excludes>
+                                        <exclude>css/</exclude>
+                                        <exclude>js/</exclude>
+                                    </excludes>
+                                </fileset>
                             </filesets>
                         </configuration>
                     </execution>
