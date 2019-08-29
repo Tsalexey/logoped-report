@@ -8,7 +8,7 @@ import * as FileSaver from 'file-saver';
 
 export class ReportsService {
 
-  uri = 'http://localhost:8080/reports';
+  uri = 'http://' + window.location.host + '/reports';
 
   constructor(private http: HttpClient) {
   }
