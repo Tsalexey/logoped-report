@@ -14,9 +14,10 @@ export class QuizzAppComponent implements OnInit {
 
   angForm: FormGroup;
   report: Report;
+  isMobile: boolean;
 
   constructor(private fb: FormBuilder, private rs: ReportsService) {
-    // this.createForm();
+    this.isMobile = 'ontouchstart' in document.documentElement;
   }
 
   createForm() {
